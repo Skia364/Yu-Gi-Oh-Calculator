@@ -1,0 +1,80 @@
+# Node modules – we don’t need that baggage
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment secrets – keep it locked down
+.env
+.env.local
+.env.*.local
+
+# VS Code settings – let’s keep it personal
+.vscode/
+
+# Logs and crash reports – not in my repo
+logs/
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency installs – we don’t track what’s disposable
+package-lock.json
+yarn.lock
+
+# Build artifacts – let’s not carry extra weight
+dist/
+out/
+build/
+
+# Binaries – too heavy, too extra
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Mac system files – not today, Finder
+.DS_Store
+
+# Idea project files – we ain't need that clutter
+.idea/
+*.iml
+
+# Coverage reports – keep that outta the mainframe
+coverage/
+*.lcov
+
+# NPM local cache – keep it fresh
+.npm/
+
+# Next.js build output (if using Next.js)
+.next/
+
+# SvelteKit
+.svelte-kit/
+
+# Remix framework
+.build/
+
+# Gatsby cache
+.cache/
+
+# TypeScript build files
+*.tsbuildinfo
+
+# Firebase cache
+.firebase/
+
+# Storybook static files
+.storybook-out/
+
+# Jest testing outputs
+jest/
+*.test-results.json
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+
+# Expo and React Native
+.expo/
+.expo-shared/
