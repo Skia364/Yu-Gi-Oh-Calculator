@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yu Gi Oh Calculator</title>
     <style>
-        #title {
+        .title-container {
             color: red;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            top: 0;
+            margin: 5px;
+            padding: 10px;
+        }
+        #mainCounter {
+            color: rgb(233, 25, 25);
             font-size: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
             top: 0;
-            background: rgb(236, 190, 63);
+            background: rgba(235, 178, 23, 0.966);
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 50px;
         }
         .counter-container {
             font-size: 50px;
@@ -38,12 +47,57 @@
             align-items: right;
             display: flex;
         }
-    </style>
+        .calcutorTitle {
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 50px;
+            width: 500px;
+            margin: 5px;
+            text-align: center;
+            background-color: lightgray;
+        }
+        #otherCounter {
+            color: rgba(43, 51, 165, 0.829);
+            font-size: 60px;
+            display: flex;
+            top: 0;
+            background: rgba(11, 90, 44, 0.767);
+            padding: 10px;
+            border-radius: 50px;
+            border: solid 2px rgb(9, 206, 255);
+        }
+        #calc-display {
+          background-color: aqua;
+          border: 2px solid black;
+          padding: 10px;
+          margin-bottom: 15px;
+          font-size: 30px;
+          text-align: right;
+          width: 90%;
+          height: 50px;
+        }
+        .calc-btn2 {
+            color: rgb(9, 206, 255);
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/207/455/original/glowing-green-white-and-gold-irish-tricolor-sparks-exploding-from-a-pyrotechnic-sparkler-full-hd-and-looping-festive-celebration-background-for-saint-patrick-s-day-video.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100px;
+            height: 60px;
+            border-radius: 50px;
+            padding: 10px;
+            font-size: 30px;
+            margin: 5px;
+            border: solid 2px rgb(9, 206, 255);
+            grid-template-rows: repeat(4, 1fr);
+        }
+     </style>
      <script src="LifePointCounter.js"></script>
+     <script src="SideCalculator.js"></script>
 </head>
+
 <body>
-    <div id="title">
-        Yu Gi Oh Calculator
+    <div class="title-container">
+        <h1 id="mainCounter">Yu Gi Oh Calculator</h1>
     </div>
     <div class="counter-container">
         <div class="counter">0</div>
@@ -54,6 +108,33 @@
         <div class="counter">0</div>
         <button class="increment">+</button>
         <button class="decrement">-</button>
+    </div>
+    <div class="calcutorTitle">
+        <h2 id="otherCounter">Counter of Life</h2>
+        <input id="calc-display" type="text" readonly>
+    <div>
+        <button class="calc-btn2">1</button>
+        <button class="calc-btn2">2</button>
+        <button class="calc-btn2">3</button>
+        <button class="calc-btn2">+</button>
+    </div>
+    <div>
+        <button class="calc-btn2">4</button>
+        <button class="calc-btn2">5</button>
+        <button class="calc-btn2">6</button>
+        <button class="calc-btn2">-</button>
+    </div>
+    <div>
+        <button class="calc-btn2">7</button>
+        <button class="calc-btn2">8</button>
+        <button class="calc-btn2">9</button>
+        <button class="calc-btn2">*</button>
+    </div>
+    <div>
+        <button class="calc-btn2">C</button>
+        <button class="calc-btn2">0</button>
+        <button class="calc-btn2">=</button>
+        <button class="calc-btn2">/</button>
     </div>
 </body>
 </html>
