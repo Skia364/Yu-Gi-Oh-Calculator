@@ -8,4 +8,3 @@ This project is a learning lesson on variables and javascript
 - Percentage meter health
 - pfp
 - Sound effects
-- 
