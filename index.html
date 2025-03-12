@@ -90,9 +90,44 @@
             border: solid 2px rgb(9, 206, 255);
             grid-template-rows: repeat(4, 1fr);
         }
+        .health-bar {
+            width: 100%;
+            height: 50px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+            position: relative;
+
+        }
+        .health-bar-fill {
+            height: 100%;
+            background-color: green;
+            border-radius: 10px;
+            width: 50%;
+            transition: width 0.5s ease-in-out;
+        }
+        .overheal-bar {
+            height: 100%;
+            background-color: blue;
+            border-radius: 10px;
+            width: 0%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: width 0.5s ease-in-out;
+        }
+        #heal-btn {
+            background-color: green;
+        }
+        #damage-btn {
+            background-color: red;
+        }
      </style>
      <script src="LifePointCounter.js"></script>
      <script src="SideCalculator.js"></script>
+     <script src="HeavyWave.js"></script>
 </head>
 
 <body>
@@ -100,14 +135,28 @@
         <h1 id="mainCounter">Yu Gi Oh Calculator</h1>
     </div>
     <div class="counter-container">
+        <div class="health-bar">
+            <div class="health-bar-fill"></div>
+            <div class="overheal-bar"></div>
+        </div>
         <div class="counter">0</div>
+     <button class="player1-btn">Player 1</button>
      <button class="increment">+</button>
      <button class="decrement">-</button>
+     <button id="heal-btn">Heal</button>
+     <button id="damage-btn">Damage</button>
     </div>
     <div class="counter-container">
+        <div class="health-bar">
+            <div class="health-bar-fill"></div>
+            <div class="overheal-bar"></div>
+        </div>
         <div class="counter">0</div>
+        <button class="player2-btn">Player 2</button>
         <button class="increment">+</button>
         <button class="decrement">-</button>
+        <button id="heal-btn">Heal</button>
+        <button id="damage-btn">Damage</button>
     </div>
     <div class="calcutorTitle">
         <h2 id="otherCounter">Counter of Life</h2>
