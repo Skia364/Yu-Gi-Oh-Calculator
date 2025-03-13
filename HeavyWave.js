@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const display = document.getElementById("calc-display");
-    let selectedPlayer = null;
-    let isHealMode = false;
-    let player1Health =8000;
-    let player2Health =8000;
+window.gameState = {
+    selectedPlayer: null,
+    player1Health: 8000,
+    player2Health: 8000,
+    isHealMode: false
+};
+
 
     document.getElementById("player1-btn").addEventListener("click", () => {
         selectedPlayer = "player1";
@@ -86,5 +87,3 @@ document.addEventListener("DOMContentLoaded", () => {
             updateHealthBar("player2", player2Health);
         }
     }
-
-});
