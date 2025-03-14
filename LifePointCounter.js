@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () =>{
         const decrementBtn = container.querySelector(".decrement");
         const healthBarFill = container.querySelector(".health-bar-fill");
         const overhealBar = container.querySelector(".overheal-bar");
+        const player1Btn = document.getElementById("player1-btn");
+        const player2Btn = document.getElementById("player2-btn");
 
         function updateCounter() {
             counterDiv.innerText = count;
@@ -38,22 +40,30 @@ document.addEventListener("DOMContentLoaded", () =>{
                 healthBarFill.style.backgroundColor = "yellow";
             }else if (healthPercentage > 30) {
                 healthBarFill.style.backgroundColor = "orange";
-            }
-else if (healthPercentage > 0) {
+            }else if (healthPercentage > 0) {
                 healthBarFill.style.backgroundColor = "red";
             }
+        }
+
+        function highlightButton(button) {
+            player1Btn.classList.remove("active");
+            player2Btn.classList.remove("active");
+            button.classList.add("active");
         }
 
         incrementBtn.addEventListener("click", () => {
             count += 1000;
             updateCounter();
+            highlightButton(player1Btn);
         });
 
         decrementBtn.addEventListener("click", () => {
             count -= 1000;
             updateCounter();
+            highlightButton(player2Btn);
         });
 
         updateCounter();
     });
 });
+        

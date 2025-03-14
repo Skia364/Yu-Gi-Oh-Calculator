@@ -1,0 +1,125 @@
+.title-container {
+    color: red;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    margin: 5px;
+    padding: 10px;
+}
+#mainCounter {
+    color: rgb(233, 25, 25);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background: rgba(235, 178, 23, 0.966);
+    padding: 10px;
+    border-radius: 50px;
+}
+.counter-container {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(115, 115, 221);
+    border-radius: 10px;
+    padding: 10px;
+}
+.decrement {
+    padding-right: 15px;
+    align-items: right;
+    display: flex;
+}
+.calcutorTitle {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    width: 500px;
+    margin: 5px;
+    text-align: center;
+    background-color: lightgray;
+}
+#otherCounter {
+    color: rgba(43, 51, 165, 0.829);
+    font-size: 60px;
+    display: flex;
+    top: 0;
+    background: rgba(11, 90, 44, 0.767);
+    padding: 10px;
+    border-radius: 50px;
+    border: solid 2px rgb(9, 206, 255);
+}
+#calc-display {
+  background-color: aqua;
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  text-align: right;
+  width: 90%;
+  height: 50px;
+}
+.calc-btn2 {
+    color: rgb(9, 206, 255);
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/207/455/original/glowing-green-white-and-gold-irish-tricolor-sparks-exploding-from-a-pyrotechnic-sparkler-full-hd-and-looping-festive-celebration-background-for-saint-patrick-s-day-video.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 60px;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 30px;
+    margin: 5px;
+    border: solid 2px rgb(9, 206, 255);
+    grid-template-rows: repeat(4, 1fr);
+}
+.health-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+
+}
+.health-bar-fill {
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+    width: 50%;
+    transition: width 0.5s ease-in-out;
+}
+.overheal-bar {
+    height: 100%;
+    background-color: blue;
+    border-radius: 10px;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+#heal-btn {
+    background-color: green;
+}
+#damage-btn {
+    background-color: red;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
