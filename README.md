@@ -9,3 +9,4 @@ This project is a learning lesson on variables and javascript
 - pfp
 - Sound effects
 - BGM
+- -Highlighting main player
