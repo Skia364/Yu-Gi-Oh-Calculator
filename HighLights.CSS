@@ -123,3 +123,14 @@ button {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
+.ending-development {
+    color: rgb(233, 25, 25);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background: rgba(235, 178, 23, 0.966);
+    padding: 10px;
+    border-radius: 50px;
+}
