@@ -1,12 +1,12 @@
 # Yu-Gi-Oh-Calculator
-This project is a learning lesson on variables and javascript
+This project is complete as of 3/17/25
 # Planned-Features 
-- lifepoint counter
-- side calculator
-- addition, subtraction, multiplication, division
+- lifepoint counter- Complete
+- side calculator- Complete
+- addition, subtraction, multiplication, division- Complete
 # Optional-Features
-- Percentage meter health
-- pfp
-- Sound effects
-- BGM
-- -Highlighting main player
+- Percentage meter health- Complete
+- pfp- not implemented
+- Sound effects- not implemented
+- BGM- not implemented
+- -Highlighting main player- complete
